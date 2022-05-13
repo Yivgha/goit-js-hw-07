@@ -17,10 +17,10 @@ function createMarkup({ preview, original, description}){
 </div>`
 };
 const markup = galleryItems.map(createMarkup).join('');
-galleryRef.insertAdjacentHTML('afterbegin', markup);
+galleryRef.insertAdjacentHTML("afterbegin", markup);
 
 //2.Реализация делегирования
-galleryRef.addEventListener('click', onClickGallery);
+galleryRef.addEventListener("click", onClickGallery);
 
 function onClickGallery(event){
     event.preventDefault();
